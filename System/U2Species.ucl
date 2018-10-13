@@ -1,0 +1,1 @@
+Mutator=(ClassName=U2Species.MutU2SpeciesFix,IconMaterialName=MutatorArt.nosym,FriendlyName=U2Species.MutU2SpeciesFix.FriendlyName,Description=U2Species.MutU2SpeciesFix.Description,FriendlyName=U2Species.MutU2SpeciesFix.FriendlyName,FallbackName="Unreal II Species fix",FallbackDesc="Fixes the silent sound issue of Unreal II species. Fully compatible with other mutators.")

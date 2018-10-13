@@ -1,0 +1,24 @@
+Installation instructions for Unreal II Species package:
+
+1. (Recommended) Get and install Unreal II Soldier models from here: http://files.filefront.com/UT2004MDL+U2Soldierszip/;9660837;/fileinfo.html
+2. (Recommended) Get and install Unreal II Skaarj models Lite from here (non-Lite version won't work with the automatic UPL): http://www.mediafire.com/?sharekey=b31a763846d2fd31e7c82ed4b8f0c380e04e75f6e8ebb871
+3. (Strongly Recommended) Get and install Unreal II Voice Pack from here: http://forums.epicgames.com/showthread.php?t=626313
+4. (Required) Get the Unreal II Species package. If you're reading this, you already have it.
+5. (Required) Extract the archive to your UT2004 directory.
+From now on you have 2 ways of installing. Note: after installing you have to remember to enable the "Unreal II Species fix" mutator!
+
+Automatic way:
+1. Depending on the components you have installed, move the contents of your UT2004/U2Species to UT2004/System, confirming all overwrites:
+a) If you have only Unreal II Soldier models, you need to move only U2Soldier.upl file;
+b) If you have only Unreal II Skaarj models Lite, you need to move only U2Skaarj.upl file;
+c) If you wish to make Hellions use Liandri Angel voice, you need to move only xPlayersL2.upl file;
+d) If you want all these changes, move all of the files.
+The files you copy are .UPL, updated specifically for this mod. Additionally, they change the bot names to more original ones and gets rid of Skaarj that are of very bad quality and not from Unreal II. If you wish to keep them or want to have more control over what is changed, use the manual installation. You can also use a hybrid of these modes if you now what you're doing.
+
+Manual way:
+1. Open the UPL file of the bots that you want to change into Unreal II Species-based ones: xPlayersL1.UPL contains all the classes that were present in UT2003: Juggernauts, Automatons, Mercenaries, Anubans, Gen Mo'Kai and Nightmare; xPlayersL2.UPL contains all UT2004-only classes: Robots, ThunderCrash, Skaarj and Hellions; xAPlayersL3.UPL contains all UT2004 Bonus Pack classes: Skaarj, Necris and MetalGuard; U2Soldier.UPL contains all Unreal II human classes; U2Skaarj.UPL contains all Unreal II Skaarj classes. If you want your current character to be changed, you have to edit the bot equivalent.
+2. Find the character you wish to change by searching for DefaultName="NameOfTheCharacter" (for example, DefaultName="John Dalton").
+3. Change the Species= entry for the character you wish to change. The possible entries are: U2Species.SPECIES_U2Marshal - category equivalent of Mercenary, Medium, default for John Dalton; U2Species.SPECIES_U2Male21s - category equivalent of Egyptian, Light, uses Male 21 voice; U2Species.SPECIES_U2Male20s - category equivalent of Egyptian, Light, uses Male 20 voice; U2Species.SPECIES_U2Male30s - category equivalent of Egyptian, Light, uses Male 30 voice; U2Species.SPECIES_U2Male26s - category equivalent of Juggernaut, Heavy, uses Male 26 voice; U2Species.SPECIES_U2Male22s - category equivalent of Mercenary, Medium, uses Male 22 voice; U2Species.SPECIES_U2Male32s - category equivalent of Mercenary, Medium, uses Male 32 voice; U2Species.SPECIES_U2Female22s - category equivalent of Mercenary, Medium, uses Female 22/23 voice; U2Species.SPECIES_U2Skaarj - category equivalent of Skaarj, uses default Skaarj voice.
+4. Save the file, make sure you left no problems and exit.
+
+The last step you need is to add "Unreal II Species Fix" mutator to your game. It will make the sounds as loud as they should be as well as add support for footstep, landing and falling sounds. You are now done!
