@@ -11,6 +11,6 @@ defaultproperties
 {
     MaleVoice="U2Male26VoicePack.U2Male26VoicePack"
     MaleSoundGroup="U2Species.U2Male26SoundGroup"
-    SpeciesName="Ghost Warrior"
+    SpeciesName="Marine"
     GibGroup="U2Species.U2GibGroup"
 }

@@ -8,9 +8,17 @@ class U2Pawn extends xPawn;
 #exec obj load file=U2SpecM20.uax
 #exec obj load file=U2SpecM21.uax
 #exec obj load file=U2SpecM22.uax
+#exec obj load file=U2SpecM23.uax
 #exec obj load file=U2SpecM26.uax
+#exec obj load file=U2SpecM27.uax
+#exec obj load file=U2SpecM28.uax
+#exec obj load file=U2SpecM29.uax
 #exec obj load file=U2SpecM30.uax
+#exec obj load file=U2SpecMeyer.uax
+#exec obj load file=U2SpecF20.uax
+#exec obj load file=U2SpecF21.uax
 #exec obj load file=U2SpecF22.uax
+#exec obj load file=U2SpecF23.uax
 #exec obj load file=U2SpecS.uax
 
 var int SurfaceNum;
@@ -378,9 +386,17 @@ function Timer()  //HACK and ugly!
      if (Species == class'U2Species.SPECIES_U2Male20s') AmbientSound = sound'U2SpecM20.Falling.Falling';
      else if (Species == class'U2Species.SPECIES_U2Male21s') AmbientSound = sound'U2SpecM21.Falling.Falling';
      else if (Species == class'U2Species.SPECIES_U2Male22s') AmbientSound = sound'U2SpecM22.Falling.Falling';
+     else if (Species == class'U2Species.SPECIES_U2Male23s') AmbientSound = sound'U2SpecM22.Falling.Falling';
      else if (Species == class'U2Species.SPECIES_U2Male26s') AmbientSound = sound'U2SpecM26.Falling.Falling';
+     else if (Species == class'U2Species.SPECIES_U2Male27s') AmbientSound = sound'U2SpecM22.Falling.Falling';
+     else if (Species == class'U2Species.SPECIES_U2Male28s') AmbientSound = sound'U2SpecM22.Falling.Falling';
+     else if (Species == class'U2Species.SPECIES_U2Male29s') AmbientSound = sound'U2SpecM22.Falling.Falling';
      else if (Species == class'U2Species.SPECIES_U2Male30s') AmbientSound = sound'U2SpecM30.Falling.Falling';
+     else if (Species == class'U2Species.SPECIES_U2Meyer') AmbientSound = sound'U2SpecMeyer.Falling.Falling'; 
+     else if (Species == class'U2Species.SPECIES_U2Female20s') AmbientSound = sound'U2SpecF20.Falling.Falling';
+     else if (Species == class'U2Species.SPECIES_U2Female21s') AmbientSound = sound'U2SpecF21.Falling.Falling';
      else if (Species == class'U2Species.SPECIES_U2Female22s') AmbientSound = sound'U2SpecF22.Falling.Falling';
+     else if (Species == class'U2Species.SPECIES_U2Female23s') AmbientSound = sound'U2SpecF23.Falling.Falling';
      else if (Species == class'U2Species.SPECIES_U2Skaarj') AmbientSound = sound'U2SpecS.Falling.Falling';
      else AmbientSound = sound'U2SpeciesSounds.Falling.Falling';
      }
@@ -396,8 +412,12 @@ singular event BaseChange() //&&GE(note): Thanks to Wormbo for this tip.
 
    if (((Base != none) || (TouchingWaterVolume() == true)) && (AmbientSound == sound'U2SpeciesSounds.Falling.Falling' || AmbientSound == sound'U2SpecM20.Falling.Falling' ||  //HACK, but no way around that
                     AmbientSound == sound'U2SpecM21.Falling.Falling' || AmbientSound == sound'U2SpecM22.Falling.Falling' ||
-                    AmbientSound == sound'U2SpecM26.Falling.Falling' || AmbientSound == sound'U2SpecM30.Falling.Falling' ||
-                    AmbientSound == sound'U2SpecF22.Falling.Falling' || AmbientSound == sound'U2SpecS.Falling.Falling' ))
+                    AmbientSound == sound'U2SpecM23.Falling.Falling' || AmbientSound == sound'U2SpecM26.Falling.Falling' ||
+                    AmbientSound == sound'U2SpecM27.Falling.Falling' || AmbientSound == sound'U2SpecM28.Falling.Falling' ||
+                    AmbientSound == sound'U2SpecM29.Falling.Falling' || AmbientSound == sound'U2SpecM30.Falling.Falling' || AmbientSound == sound'U2SpecMeyer.Falling.Falling' ||
+                    AmbientSound == sound'U2SpecF20.Falling.Falling' || AmbientSound == sound'U2SpecF21.Falling.Falling' ||
+                    AmbientSound == sound'U2SpecF22.Falling.Falling' || AmbientSound == sound'U2SpecF23.Falling.Falling' ||
+                    AmbientSound == sound'U2SpecS.Falling.Falling' ))
                     AmbientSound = none;
 }
 

@@ -35,7 +35,7 @@ function ModifyPlayer(Pawn Other)
 defaultproperties
 {
   FriendlyName = "Unreal II Species fix"
-  Description  = "Fixes the silent sound issue of Unreal II species. Fully compatible with other mutators."
+  Description  = "Fixes the silent sound issue of Unreal II species. Mostly compatible with other mutators and custom gametypes. NOT COMPATIBLE with Slave Master gametype."
   SpeciesClasses(0)="U2Species.SPECIES_U2Marshal"
   SpeciesClasses(1)="U2Species.SPECIES_U2Male20s"
   SpeciesClasses(2)="U2Species.SPECIES_U2Male21s"
@@ -45,4 +45,11 @@ defaultproperties
   SpeciesClasses(6)="U2Species.SPECIES_U2Male32s"
   SpeciesClasses(7)="U2Species.SPECIES_U2Female22s"
   SpeciesClasses(8)="U2Species.SPECIES_U2Skaarj"
+  SpeciesClasses(9)="U2Species.SPECIES_U2Male23s"
+  SpeciesClasses(10)="U2Species.SPECIES_U2Male27s"
+  SpeciesClasses(11)="U2Species.SPECIES_U2Male28s"
+  SpeciesClasses(12)="U2Species.SPECIES_U2Female20s"
+  SpeciesClasses(13)="U2Species.SPECIES_U2Female21s"
+  SpeciesClasses(14)="U2Species.SPECIES_U2Female23s"
+  SpeciesClasses(15)="U2Species.SPECIES_U2Meyer"
 }
